@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered writing assistant for blogs, emails, and content creation.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["AI content generation", "Grammar correction", "Multiple tone options"],
+    "icon": "edit"
+  },
+  {
+    "id": 2,
+    "name": "Design Template Packs",
+    "description": "A collection of high-quality design templates for various creative needs.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["500+ templates", "Editable formats", "Print & digital ready"],
+    "icon": "layout"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access a vast library of premium photos, videos, and graphics.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited downloads", "HD & 4K assets", "Commercial license"],
+    "icon": "image"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Boost productivity with tools for automating repetitive tasks.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Workflow automation", "Task scheduling", "Integration support"],
+    "icon": "settings"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional, ATS-friendly resumes with ease.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "file-text"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Ready-to-use content templates for all major social platforms.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Platform-specific templates", "Caption ideas", "Editable graphics"],
+    "icon": "share-2"
+  }
+]
