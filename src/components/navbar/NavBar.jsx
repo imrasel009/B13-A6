@@ -4,11 +4,13 @@ const NavBar = () => {
   return (
     <div className="bg-white py-4 border-b-2 border-[#F2F2F2]">
       <div className=" flex items-center justify-between container mx-auto">
+        {/* left part */}
         <div>
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
             DigiTools
-          </h1>
+          </h2>
         </div>
+        {/* middle part */}
         <div>
           <ul className="flex gap-8">
             <li className="text-[#101727] font-semibold">
@@ -28,6 +30,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        {/* right part */}
         <div className="flex items-center gap-3">
           <button>
             <a href="">
@@ -37,7 +40,7 @@ const NavBar = () => {
           <button className="text-[#101727] font-semibold">
             <a href="">Login</a>
           </button>
-          <button className="font-semibold py-3 px-4 text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl cursor-pointer">
+          <button className="font-semibold py-3 px-4 text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl cursor-pointer">
             <a href="">Get Started</a>
           </button>
         </div>
