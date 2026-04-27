@@ -33,10 +33,10 @@ const Banner = () => {
             <button className="font-semibold py-3.5 px-4 text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[100px] cursor-pointer">
               Explore Products
             </button>
-            <div className="p-[2px] rounded-[100px] bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+            <div className="p-0.5 rounded-[100px] bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
               <button className="flex items-center gap-2 font-semibold py-3.5 px-4 bg-white rounded-[100px] cursor-pointer">
                 <img src={playImg} alt="" />
-                <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                   Watch Demo
                 </span>
               </button>
