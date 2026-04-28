@@ -5,6 +5,7 @@ const Banner = () => {
    return (
       <div className="py-15">
          <div className="flex items-center justify-between container mx-auto">
+           
             {/* left part */}
             <div className="space-y-8">
                {/*left side texts */}
@@ -43,6 +44,7 @@ const Banner = () => {
                   </div>
                </div>
             </div>
+           
             {/* right part */}
             <div>
                <img src={bannerImg} alt="" />

@@ -4,12 +4,15 @@ const NavBar = () => {
    return (
       <div className="bg-white py-4 border-b-2 border-[#F2F2F2]">
          <div className=" flex items-center justify-between container mx-auto">
+            
             {/* left part */}
             <div>
                <h2 className="text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                   DigiTools
                </h2>
             </div>
+            
+            
             {/* middle part */}
             <div>
                <ul className="flex gap-8">
@@ -30,6 +33,7 @@ const NavBar = () => {
                   </li>
                </ul>
             </div>
+            
             {/* right part */}
             <div className="flex items-center gap-3">
                <button>
