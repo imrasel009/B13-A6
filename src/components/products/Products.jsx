@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Cart from "./Cart";
 import ProductCards from "./ProductCards";
 
 const Products = ({ carts, setCarts }) => {
+   const [activeTab, setActiveTab] = useState(true);
+
    return (
       <div className="py-30 container mx-auto space-y-10">
          {/* static content */}
@@ -14,19 +17,36 @@ const Products = ({ carts, setCarts }) => {
                designed <br /> to boost your productivity and creativity.
             </p>
             <div className="p-1 border border-[#F6F6F6] rounded-[100px] w-fit mx-auto">
-               <button className="py-3.5 px-4 text-[#25065D] font-medium rounded-[999px">
+               <button
+                  onClick={() => setActiveTab(true)}
+                  className={`py-3.5 px-4 font-medium rounded-[999px] ${
+                     activeTab
+                        ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
+                        : "text-[#25065D]"
+                  }`}
+               >
                   Products
                </button>
-               <button className="py-3.5 px-4 text-[#25065D] font-medium rounded-[999px]">
-                  Cart({carts.length})
+               <button
+                  onClick={() => setActiveTab(false)}
+                  className={`py-3.5 px-4 font-medium rounded-[999px] ${
+                     !activeTab
+                        ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
+                        : "text-[#25065D]"
+                  }`}
+               >
+                  Cart ({carts.length})
                </button>
             </div>
          </div>
 
          {/* dynamic content */}
-         <div className="flex items-center justify-center">
-            <ProductCards carts={carts} setCarts={setCarts}></ProductCards>
-            <Cart carts={carts} setCarts={setCarts}></Cart>
+         <div className="flex justify-center">
+            {activeTab ? (
+               <ProductCards carts={carts} setCarts={setCarts}></ProductCards>
+            ) : (
+               <Cart carts={carts} setCarts={setCarts}></Cart>
+            )}
          </div>
       </div>
    );

@@ -19,6 +19,7 @@ const ProductCards = ({ carts, setCarts }) => {
       }
 
       setCarts([...carts, product]);
+      alert("Item added to cart.");
    };
 
    return (
@@ -26,7 +27,7 @@ const ProductCards = ({ carts, setCarts }) => {
          {products.map((product) => (
             <div
                key={product.id}
-               className="card w-96 bg-base-100 shadow-sm h-full"
+               className="card w-96 bg-base-100 shadow-xl h-full"
             >
                <div className="card-body flex flex-col justify-between h-full">
                   <div className="flex justify-between mb-4">
@@ -67,9 +68,15 @@ const ProductCards = ({ carts, setCarts }) => {
                   <div className="mt-6">
                      <button
                         onClick={() => addToCart(product)}
-                        className="btn text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-[100px] "
+                        className={`btn text-white font-bold btn-block rounded-[100px] ${
+                           carts.find((item) => item.id === product.id)
+                              ? "bg-green-500"
+                              : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+                        }`}
                      >
-                        Buy Now
+                        {carts.find((item) => item.id === product.id)
+                           ? "Item Selected"
+                           : "Buy Now"}
                      </button>
                   </div>
                </div>

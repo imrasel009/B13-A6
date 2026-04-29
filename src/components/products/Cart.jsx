@@ -1,9 +1,20 @@
+const Cart = ({ carts, setCarts }) => {
+   const total = carts.reduce((sum, item) => sum + item.price, 0);
 
+   const removeCartItem = (id) => {
+      const filteredCart = carts.filter((cart) => cart.id != id);
+      setCarts(filteredCart);
+      alert("item removed successfully");
+   };
 
-const Cart = ({ carts }) => {
+   const handleCheckout = () => {
+      setCarts([]);
+      alert("Order placed successfully!");
+   };
+
    if (carts.length == 0) {
       return (
-         <div className="h-121.5 flex justify-center items-center border border-[#F2F2F2] rounded-sm">
+         <div className="h-121.5 container mx-auto flex justify-center items-center bg-[#F2F2F2] shadow-xl rounded-sm">
             <h5 className=" font-extrabold text-4xl text-[#101727]">
                Your Cart Is Empty
             </h5>
@@ -11,7 +22,7 @@ const Cart = ({ carts }) => {
       );
    }
    return (
-      <div className="p-10 border border-[#F2F2F2] rounded-sm space-y-6">
+      <div className="p-10 border w-full border-[#F2F2F2] rounded-sm space-y-6">
          <p className="font-bold text-2xl text-[#101727]">Your Cart</p>
 
          {/* selected products */}
@@ -32,17 +43,25 @@ const Cart = ({ carts }) => {
                         </span>
                      </div>
                   </div>
-                  <button className="font-bold text-[#FF3980]">Remove</button>
+                  <button
+                     onClick={() => removeCartItem(cart.id)}
+                     className="font-bold text-[#FF3980]"
+                  >
+                     Remove
+                  </button>
                </div>
             ))}
          </div>
          <div className="flex justify-between">
             <p className="text-[#627382]">Total</p>
-            <span className="text-2xl font-bold text-[#101727]">$78</span>
+            <span className="text-2xl font-bold text-[#101727]">${total}</span>
          </div>
 
          {/* checkout button */}
-         <button className="btn text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-[100px] ">
+         <button
+            onClick={handleCheckout}
+            className="btn text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-[100px]"
+         >
             Proceed to Checkout
          </button>
       </div>
