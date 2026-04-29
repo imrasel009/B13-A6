@@ -5,10 +5,10 @@
     "description": "Advanced AI-powered writing assistant for blogs, emails, and content creation.",
     "price": 14.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["AI content generation", "Grammar correction", "Multiple tone options"],
-    "icon": "edit"
+    "icon": "https://i.ibb.co.com/0jfWfTBL/writing.png"
   },
   {
     "id": 2,
@@ -16,10 +16,10 @@
     "description": "A collection of high-quality design templates for various creative needs.",
     "price": 29.99,
     "period": "one-time",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["500+ templates", "Editable formats", "Print & digital ready"],
-    "icon": "layout"
+    "icon": "https://i.ibb.co.com/B5ZnrSmQ/design.png"
   },
   {
     "id": 3,
@@ -27,10 +27,10 @@
     "description": "Access a vast library of premium photos, videos, and graphics.",
     "price": 12.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["Unlimited downloads", "HD & 4K assets", "Commercial license"],
-    "icon": "image"
+    "icon": "https://i.ibb.co.com/3yMq3YBq/camera.png"
   },
   {
     "id": 4,
@@ -38,10 +38,10 @@
     "description": "Boost productivity with tools for automating repetitive tasks.",
     "price": 49.99,
     "period": "one-time",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": ["Workflow automation", "Task scheduling", "Integration support"],
-    "icon": "settings"
+    "icon": "https://i.ibb.co.com/C4CspDH/automation.png"
   },
   {
     "id": 5,
@@ -49,10 +49,10 @@
     "description": "Create professional, ATS-friendly resumes with ease.",
     "price": 9.99,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "file-text"
+    "icon": "https://i.ibb.co.com/9kNYKzD9/resume.png"
   },
   {
     "id": 6,
@@ -60,9 +60,9 @@
     "description": "Ready-to-use content templates for all major social platforms.",
     "price": 19.99,
     "period": "one-time",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["Platform-specific templates", "Caption ideas", "Editable graphics"],
-    "icon": "share-2"
+    "icon": "https://i.ibb.co.com/nqCRwmzW/social.png"
   }
 ]

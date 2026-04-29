@@ -4,6 +4,7 @@ import ClosingSection from "./components/closingSection/ClosingSection";
 import Footer from "./components/footer/Footer";
 import Info from "./components/info/info";
 import NavBar from "./components/navbar/NavBar";
+import Products from "./components/products/Products";
 import RatingSection from "./components/rating/RatingSection";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
          <NavBar></NavBar>
          <Banner></Banner>
          <RatingSection></RatingSection>
+         <Products></Products>
          <Info></Info>
          <ClosingSection></ClosingSection>
          <Footer></Footer>
