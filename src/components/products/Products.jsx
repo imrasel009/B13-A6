@@ -1,6 +1,7 @@
+import Cart from "./Cart";
 import ProductCards from "./ProductCards";
 
-const Products = () => {
+const Products = ({ carts, setCarts }) => {
    return (
       <div className="py-30 container mx-auto space-y-10">
          {/* static content */}
@@ -17,14 +18,15 @@ const Products = () => {
                   Products
                </button>
                <button className="py-3.5 px-4 text-[#25065D] font-medium rounded-[999px]">
-                  Cart
+                  Cart({carts.length})
                </button>
             </div>
          </div>
 
          {/* dynamic content */}
          <div className="flex items-center justify-center">
-            <ProductCards></ProductCards>
+            <ProductCards carts={carts} setCarts={setCarts}></ProductCards>
+            <Cart carts={carts} setCarts={setCarts}></Cart>
          </div>
       </div>
    );

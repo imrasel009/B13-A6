@@ -2,13 +2,23 @@ import { use } from "react";
 
 const productsPromise = fetch("/productData.json").then((res) => res.json());
 
-const ProductCards = () => {
+const ProductCards = ({ carts, setCarts }) => {
    const products = use(productsPromise);
 
    const getTagClass = (tag) => {
       if (tag === "New") return "bg-[#DBFCE7] text-[#0A883E]";
       if (tag === "Popular") return "bg-[#E1E7FF] text-[#9514FA]";
       if (tag === "Best Seller") return "bg-[#FEF3C6] text-[#BB4D00]";
+   };
+
+   const addToCart = (product) => {
+      const isExist = carts.find((item) => item.id == product.id);
+      if (isExist) {
+         alert("Item is already in cart.");
+         return;
+      }
+
+      setCarts([...carts, product]);
    };
 
    return (
@@ -55,7 +65,10 @@ const ProductCards = () => {
                      ))}
                   </ul>
                   <div className="mt-6">
-                     <button className="btn text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-[100px] ">
+                     <button
+                        onClick={() => addToCart(product)}
+                        className="btn text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-[100px] "
+                     >
                         Buy Now
                      </button>
                   </div>
