@@ -23,7 +23,7 @@ const ProductCards = ({ carts, setCarts }) => {
    };
 
    return (
-      <div className="grid grid-cols-3 gap-7.5 justify-center items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-7.5 justify-center items-center ">
          {products.map((product) => (
             <div
                key={product.id}

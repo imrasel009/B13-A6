@@ -3,7 +3,7 @@ import cartImg from "../../assets/products/shopping-cart.png";
 const NavBar = () => {
    return (
       <div className="bg-white py-4 border-b-2 border-[#F2F2F2]">
-         <div className=" flex items-center justify-between container mx-auto">
+         <div className=" flex flex-col lg:flex-row items-center justify-between container mx-auto">
             
             {/* left part */}
             <div>
