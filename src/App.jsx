@@ -7,6 +7,7 @@ import Info from "./components/info/info";
 import NavBar from "./components/navbar/NavBar";
 import Products from "./components/products/Products";
 import RatingSection from "./components/rating/RatingSection";
+import Pricing from "./components/pricing/Pricing";
 
 function App() {
    const [carts, setCarts] = useState([]);
@@ -17,6 +18,7 @@ function App() {
          <RatingSection></RatingSection>
          <Products carts={carts} setCarts={setCarts}></Products>
          <Info></Info>
+         <Pricing></Pricing>
          <ClosingSection></ClosingSection>
          <Footer></Footer>
       </>

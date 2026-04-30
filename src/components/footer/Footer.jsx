@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="bg-[#101727] pt-30 pb-7.5">
          <div className="container mx-auto">
             {/* links part */}
-            <div className="flex items-top justify-between">
+            <div className="grid grid-cols-2 lg:flex items-top justify-between">
                <div className="space-y-4">
                   <h2 className="text-white font-extrabold text-3xl">
                      DigiTools

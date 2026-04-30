@@ -1,15 +1,17 @@
+import { toast } from "react-toastify";
+
 const Cart = ({ carts, setCarts }) => {
    const total = carts.reduce((sum, item) => sum + item.price, 0);
 
    const removeCartItem = (id) => {
       const filteredCart = carts.filter((cart) => cart.id != id);
       setCarts(filteredCart);
-      alert("item removed successfully");
+      toast("item removed successfully");
    };
 
    const handleCheckout = () => {
       setCarts([]);
-      alert("Order placed successfully!");
+      toast.success("Order placed successfully!");
    };
 
    if (carts.length == 0) {

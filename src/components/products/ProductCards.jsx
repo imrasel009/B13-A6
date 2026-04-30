@@ -1,4 +1,5 @@
 import { use } from "react";
+import { toast } from "react-toastify";
 
 const productsPromise = fetch("/productData.json").then((res) => res.json());
 
@@ -14,16 +15,16 @@ const ProductCards = ({ carts, setCarts }) => {
    const addToCart = (product) => {
       const isExist = carts.find((item) => item.id == product.id);
       if (isExist) {
-         alert("Item is already in cart.");
+         toast.error("Item is already in cart.");
          return;
       }
 
       setCarts([...carts, product]);
-      alert("Item added to cart.");
+      toast.success("Item added to cart.");
    };
 
    return (
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-7.5 justify-center items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8.5 justify-center items-center ">
          {products.map((product) => (
             <div
                key={product.id}
