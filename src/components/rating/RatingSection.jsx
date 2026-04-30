@@ -1,7 +1,7 @@
 const RatingSection = () => {
    return (
       <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-15">
-         <div className="flex flex-col text-center gap-7 lg:flex-row justify-between container mx-auto">
+         <div className="flex flex-col text-center gap-7 lg:flex-row justify-between container mx-auto px-8">
             {/* left part */}
 
             <div>

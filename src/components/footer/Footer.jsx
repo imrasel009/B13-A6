@@ -3,7 +3,7 @@ import socialImg from "../../assets/social.png";
 const Footer = () => {
    return (
       <div className="bg-[#101727] pt-30 pb-7.5">
-         <div className="container mx-auto">
+         <div className="container mx-auto px-8">
             {/* links part */}
             <div className="grid grid-cols-2 lg:flex items-top justify-between">
                <div className="space-y-4">

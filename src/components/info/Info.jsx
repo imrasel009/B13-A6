@@ -8,7 +8,7 @@ import n3 from "../../assets/n3.png";
 const Info = () => {
    return (
       <div className="bg-[#F9FAFC] py-30 ">
-         <div className="container mx-auto">
+         <div className="container mx-auto px-8">
             {/* text info */}
 
             <div className="space-y-4 text-center mb-10">

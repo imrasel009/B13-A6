@@ -3,7 +3,7 @@ import { MdOutlineDone } from "react-icons/md";
 const Pricing = () => {
    return (
       <div className="py-30">
-         <div className="container mx-auto px-50 space-y-10">
+         <div className="container mx-auto px-8 space-y-10">
             {/* text part */}
             <div className="space-y-4 text-center">
                <h2 className="text-5xl font-extrabold text-[#101727]">

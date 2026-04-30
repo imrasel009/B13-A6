@@ -6,7 +6,7 @@ const Products = ({ carts, setCarts }) => {
    const [activeTab, setActiveTab] = useState(true);
 
    return (
-      <div className="py-30 container mx-auto space-y-10">
+      <div className="py-30 container mx-auto px-8 space-y-10">
          {/* static content */}
          <div className="text-center space-y-4">
             <h2 className="text-5xl text-[#101727] font-extrabold">

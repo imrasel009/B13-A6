@@ -3,7 +3,7 @@ import cartImg from "../../assets/products/shopping-cart.png";
 const NavBar = () => {
    return (
       <div className="bg-white py-4 border-b-2 border-[#F2F2F2]">
-         <div className=" flex flex-col gap-7 lg:flex-row items-center justify-between container mx-auto">
+         <div className=" flex flex-col gap-7 lg:flex-row items-center justify-between container mx-auto px-8">
             {/* left part */}
             <div className="items-center">
                <h2 className="text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">

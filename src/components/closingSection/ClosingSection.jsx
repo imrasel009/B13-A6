@@ -1,7 +1,7 @@
 const ClosingSection = () => {
    return (
       <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-30">
-         <div className="container mx-auto space-y-10">
+         <div className="container mx-auto px-8 space-y-10">
             <div className="text-center space-y-4">
                <h3 className="text-white font-extrabold text-[40px]">
                   Ready to Transform Your Workflow?
